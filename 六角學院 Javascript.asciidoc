@@ -1,0 +1,2055 @@
+= Final
+
+* https://jsbin.com/?html,js,output[JS Bin]
+
+* 最終試煉 -
+https://docs.google.com/forms/d/e/1FAIpQLSeBrQ9NspE3_6MCk2Fi0rMfu3baVcnNrPIEhvKz5ZsB3pwnNw/viewform?c=0&w=1[JS
+百題斬]
+
+* https://courses.hexschool.com/courses/js/lectures/11952546?question_id=x01Tyw1anSbKH8EFJh44LP01g==[閉包觀念]
+
+= Chpater 14 : Google Map API
+
+
++*In[ ]:*+
+[source, javascript]
+----
+
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+### // 02 如何評估 AP I的可用性
+----
+
+=== // 01 什麼是API?
+
+* API 本身就是抽象的，但我自己解釋廣義 API
+就是「只要是你使用別人包裝好的程式語法與功能，就可稱作 API」。
+
+* https://zh.wikipedia.org/wiki/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%8E%A5%E5%8F%A3[應用程式介面]
+
+與網際網路相連的端系統提供了一個應用程式介面（英語：Application
+Programming
+Interface，縮寫：API；又稱為應用程式編程介面）是軟體系統不同組成部分銜接的約定。
+
+API規定了執行在一個端系統上的軟體請求網際網路基礎設施向執行在另一個端系統上的特定目的地軟體交付資料的方式。比方說：Alice使用郵政服務向Bob發一封信，郵政服務要求Alice將信放進信封中；在信封的中央寫上Bob的全名、位址和郵政編碼；封上信封；在信封的右上角貼上郵票；最後將信封丟進電子信箱里；郵政服務有自己的「郵政服務API」或一套規則，Alice必須這麼遵循，郵政服務才能把信寄給Bob；同理，網際網路也有一個傳送資料的程式必須遵循的API，使網際網路向接收資料的程式交付資料。—來源於：https://www.tenlong.com.tw/products/9787111599715?list_name=srh[《電腦網路-自頂向下學習法》]
+
+API 為 應用程式介面（英語：application programming
+interface，縮寫作API在網頁開發中，通常是指開發者與另一端程式串接的方法（通常以文件呈現),而
+jQuery 並非是 API,也不是 Framework（正確為 library
+函式庫）只有他的文件才能稱作 API;cros
+沒開表示不允許跨域，另一種方式是使用後端;AJAX 串接其中一種就是透過
+API，並沒有不流行的意思.
+
+https://github.com/hexschool/vue-course-api-wiki/wiki/%E5%AE%A2%E6%88%B6%E8%B3%BC%E7%89%A9-%5B%E5%85%8D%E9%A9%97%E8%AD%89%5D[客戶購物
+[免驗證] API]
+
+= Chapter 13 : Leaflet + OpenStreetMap 地圖應用
+
+= Chapter 12 : AJAX
+
+* https://github.com/hsiangfeng/APIList[資源補充 API list]
+
+* 六角 API Github -
+https://github.com/hexschool/nodejs_ajax_tutorial[nodejs_ajax_tutorial]
+
+* 範例 : https://albertnotes.github.io/category/20200226/1536962204/[F2E
+精神時光屋 - 口罩地圖]
+
+* API URL : https://hexschool-tutorial.herokuapp.com/api/signup
+
+
++*In[ ]:*+
+[source, javascript]
+----
+
+----
+
+=== // 09 從 Chrome 開發人員工具檢視 AJAX POST
+
+http://localhost:8889/view/Desktop/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/pics/%E8%A8%BB%E8%A7%A3%202020-03-22%20180217.png[GET
+和 POST 的差別1 - GET 流程]
+
+http://localhost:8889/view/Desktop/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/pics/%E8%A8%BB%E8%A7%A3%202020-03-22%20180621.png[GET
+和 POST 的差別2 - POST 流程] content-type :
+application/x-www-form-urlencoded
+
+-如果是其他格式 - content-type : application/json
+http://localhost:8889/view/Desktop/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/pics/%E8%A8%BB%E8%A7%A3%202020-03-22%20180813.png[其他檔案格式流程]
+-有時候工程師會希望前端直接吐JSON給後端
+
+=== // 08
+
+https://github.com/hexschool/nodejs_ajax_tutorial[六角 POST API 連結]
+
+
++*In[ ]:*+
+[source, javascript]
+----
+
+----
+
+=== // 07 傳統表單輸入介紹
+
+
++*In[ ]:*+
+[source, javascript]
+----
+
+----
+
+=== // 06 什麼是 Cross-Origin Resource Sharing (CORS)？
+
+http://www.test-cors.org/[CORS偵測服務]
+
+http://opendata2.epa.gov.tw/UV/UV.json[練習用資料]
+https://opendata.epa.gov.tw/[OpenData.epa]
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// CORS 有開才可以抓資料 
+----
+
+=== // 05 HTTP 狀態碼
+
+https://blog.miniasp.com/post/2009/01/16/Web-developer-should-know-about-HTTP-Status-Code[網頁開發人員應了解的
+HTTP 狀態碼] https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html[10
+Status Code Definitions]
+
+=== // 03 04 AJAX 非同步觀念(上)(下)
+
+
++*In[ ]:*+
+[source, javascript]
+----
+
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// readyState = 4 
+
+// true 非同步,不會將資料傳回來,就讓程式繼續往下跑 console.log() 跑的時候,資料還沒傳回來, console 顯示會是空的.
+
+var xhr = new XMLHttpRequest();
+xhr.open('get','https://hexschool.github.io/ajaxHomework/data.json',true);
+xhr.send(null);
+
+console.log(xhr.responseText);
+
+// false 同步,它會等資料傳回來,才會往下跑
+----
+
+=== // 02 透過 XMLHttpRequest 物件跨瀏覽器撈資料
+練習用的 json 連結 : https://hexschool.github.io/ajaxHomework/data.json
+
++*In[ ]:*+
+[source, javascript]
+----
+// 透過瀏覽器,一定要先產生 XMLHttpRequest 物件,去跟其他伺服器要資料
+
+var xhr = new XMLHttpRequest();
+// 輸入 xhr 查看
+----
+
+//
+http://localhost:8889/view/Desktop/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/pics/%E8%A8%BB%E8%A7%A3%202020-03-22%20091240.png[XMLHttpRequest()
+的各種狀態]
+
+
++*In[16]:*+
+[source, javascript]
+----
+// XMLHttpRequest 中 - readyState 如股數據為:
+// 0 - 你已經產生一個 XMLHttpRequest, 但是還沒有連結你要撈的資料
+// 1 - 你用了 open(), 但你還沒有把資料傳送過去
+// 2 - 偵測到你有用 send
+// 3 - loading 
+// 4 - 代表你撈到資料了,數據已經完全接收到了
+
+
+// .open() - 三個參數 : '格式', '要讀取的網址', '同步與非同步'
+// 格式: get(讀取資料), post(傳送資料到伺服器)
+// xhr.open('get','',true)
+// 格式改用 post - 問問題 - 會回傳字串來做判斷狀態是否 ok
+
+// 狀態 1
+xhr.open('get','https://hexschool.github.io/ajaxHomework/data.json',true);
+// 輸入 xhr 查看
+
+
+// 空的資料(沒有打算送任何資料,只要讀取資料), 狀態 1 
+xhr.send(null);
+// 輸入 xhr 查看
+// 可以拿到 responseText 的資料
+
+// 可以用 JQuery ajax 去實現此功能, 本堂課是原生的 JS 語法, 不管用什麼庫, 背後都是這個原理
+----
+
+=== // 01 什麼是 AJAX?
+
+* http://localhost:8889/view/Desktop/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/pics/%E8%A8%BB%E8%A7%A3%202020-03-22%20085442.png[整個網頁重新下載
+(requests)]
+* https://login.yahoo.com/account/create?src=noSrc&specId=yidReg[使用
+AJAX]
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 使用AJAX可以整個網頁不用重新整理
+// 例子 : login 資料, 加入購物車,車內數量增加
+----
+
+= Chapter 11 : JS 開發邏輯思維養成
+
+= Chapter 10 : 瀏覽器功能探索(BOM)
+
+=== // 04 動態擷取瀏覽器高度 - innerHeight
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 畫面的高度
+window.innerHeight
+
+// 整個瀏覽器的高度
+window.outerHeight
+
+// 希望達到 畫面高度 = 瀏覽器高度 的自適應功能
+----
+<body>
+    <div class="hero"></div>
+    <div class="section2">
+        section2
+    </div>
+    <script src="js/all.js"></script>
+</body>
+
++*In[ ]:*+
+[source, javascript]
+----
+// 狀況一: 
+document.querySelector('.hero').style.height = window.innerHeight+"px"
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 狀況二: 隨時 update 自適應呈現滿版 - 加上 window.onresize 
+window.onresize = function(){
+    document.querySelector('.hero').style.height = window.innerHeight+"px"
+}
+----
+
+=== // 03 透過 JS 設計列印功能
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 列印 window.print()  - 常使用在票券, QRcode, 訂單資訊, 發票
+// 瀏覽 location 資訊 console.log(location) -  
+// 移動到 google 首頁 window.open() -'.open' - 有許多參數可以設定
+----
+ <input type="button" id="print" value="列印">
+ <input type="button" id="locat" value="瀏覽location資訊">
+ <input type="button" id="open" value="移動到google首頁">
+
++*In[ ]:*+
+[source, javascript]
+----
+// window.print()
+document.getElementById('print').onclick = function () {
+    window.print()
+}
+
+
+// console.log(location)
+document.getElementById('locat').onclick = function () {
+    console.log(location)
+}
+
+
+// window.open()
+document.getElementById('open').onclick = function () {
+    window.open('http://www.google.com.tw')
+}
+----
+
+=== // 02 回上頁功能實作
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 透過 history 來實現回到上頁
+// 引導使用者的瀏覽流程
+----
+<body>
+    <h1>第一頁</h1>
+   <a href="b.html">連到第二頁</a>
+   <br>
+   <a href="#" id="next">下一頁(JS版)</a>
+
+   <script>
+        document.getElementById('next').onclick = function () {
+            window.history.forward();
+        }
+    </script>
+</body>
+
++*In[ ]:*+
+[source, javascript]
+----
+// 前往下一頁
+document.getElementById('next').onclick = function () {
+    window.history.forward();
+    }
+----
+<body>
+   <h1>第二頁</h1>
+   <input type="button" id="back" value="回到上一頁">
+    <script>
+        document.getElementById('back').onclick = function () {
+            window.history.back();
+        }
+    </script>
+</body>
+
++*In[ ]:*+
+[source, javascript]
+----
+// 回到上一頁
+document.getElementById('back').onclick = function () {
+    window.history.back();
+}
+----
+
+=== // 01 瀏覽器功能簡介
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// BOM (Browser Object Model)
+// 當我們打開瀏覽器時,就會打開一個 window 的物件
+// window = history(歷史紀錄) + frames(針對網頁iframe去做操控) + location(可變更瀏覽位址) + *DOM(針對document去操控元素) + screen(螢幕尺寸) + navigator(瀏覽器資訊)
+// 在 console 中輸入 window , 可以看到底下許多物件, 這些物件可以決定整個瀏覽器的呈現 ; 可從 _proto_ 去看綁定的功能
+//  ex. console.log 輸入 location.href 可看網址 ; ex. navigator.online - 確認是否連接網路 (true/false)
+----
+
+= Chapter 09 : Local Storage - 瀏覽器資料儲存
+
+=== // 06 local storage 作業介紹 + 07 local storage 作業講解
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 新增,刪除都運用到 local storage
+// 06 https://courses.hexschool.com/courses/js/lectures/11952505
+// 07 https://courses.hexschool.com/courses/js/lectures/11952507
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+
+----
+
+=== // 05 splice - 刪除array資料
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 增加 array 內容用 push
+var colors = ['black','red']
+console.log(colors);
+
+colors.push('yellow')
+console.log(colors);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 反過來,刪除就用 splice
+
+// 0 - 刪除的位置 ; 2 - 幾筆資料 
+var colors = ['black','red','yellow']
+colors.splice(0,2)
+console.log(colors);
+----
+<!-- -->
+<ul style="padding:50px;background:#000;color:#fff" class="list"></ul>
+
++*In[ ]:*+
+[source, javascript]
+----
+var country = [
+  {
+    farmer:'卡斯伯'
+  }
+  ,{
+    farmer:'查理'
+  },{
+      farmer:'約翰'
+  }
+]
+
+var list = document.querySelector('.list');
+
+// updateList()
+
+function updateList(){
+  var str = '';
+  var len = country.length;
+  for(var i = 0;len>i;i++){
+    str+='<li data-num="'+i+'">'+country[i].farmer+'</li>'  
+  }
+  list.innerHTML = str;
+}
+updateList();
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+function checkList(e){
+    var num = e.target.dataset.num;
+    if(e.target.nodeName !== 'LI'){return};
+    country.splice(num,1);
+    // 再重新渲染一次,再跑一次 updateList() 來更新瀏覽器
+    updateList();
+}
+
+list.addEventListener('click',checkList,false);
+----
+
+=== // 04 dataset , array 運用
+<!-- -->
+<ul style="padding:50px;background:#000;color:#fff" class="list"></ul>
+
++*In[ ]:*+
+[source, javascript]
+----
+var country = [
+  {
+    farmer:'卡斯伯'
+  }
+  ,{
+    farmer:'查理'
+  }
+]
+
+var list = document.querySelector('.list');
+
+
+
+// 更新農場資料
+// 插入data-num
+function updateList(){
+  var str = '';
+  var len = country.length;
+  for(var i = 0;len>i;i++){
+    str+='<li data-num="'+i+'">'+country[i].farmer+'</li>'  
+  }
+  list.innerHTML = str;
+}
+updateList();
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 確認點擊的農夫是誰 - 監聽位階太低(li)要用很多監聽,將構成頁面效能降低
+
+var listLi = document.querySelector('.list li');
+listLi.addEventListener('click',function(){
+    console.log('test');
+})
+
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 確認點擊的農夫是誰 - 將監聽指定在 ul (.list) 
+
+function checkList(e){ 
+  // 先偵測點擊的內容 (num 的數字號碼)
+  // data-num 後面帶的數字很好利用,可以用來指定那一行程式(例如寫迴圈來點擊刪除)  
+  var num = e.target.dataset.num;
+  // nodeName 
+  console.log(e.target.nodeName);
+  // return - 回傳數值 or 中斷程式(不繼續往下跑)  
+  if(e.target.nodeName !== 'LI'){return};
+  alert('你選擇的農夫是'+country[num].farmer)
+}
+list.addEventListener('click',checkList,false);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 另外一種寫法
+
+function checkList(e){
+    var num = e.target.nodeName;
+    if(num !== "LI"){return}
+    var str = e.target.dataset.num;
+    console.log('您現在選擇的農夫是'+country[str].farmer)
+}
+
+list.addEventListener('click',checkList,false)
+----
+
+=== // 03 data-* - 透過 dataset 讀取自訂資料
+<!-- data-* 是一個新的HTML標籤,可以存放內容 -->
+<!-- 在JS中則可以透過Dataset去撈取資料 -->
+
+<ul class="list">
+    <li data-num="0" data-dog="3" class="listli">卡斯伯</li> 
+</ul>      
+
+<!--在 li 中綁定資料-->
+
++*In[ ]:*+
+[source, javascript]
+----
+// dataset - 撈出 data 裡面的值
+document.querySelector('.list li').dataset
+// 回傳 DOMStringMap {num:"0", dog:"3"}
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var list = document.querySelector('.list li');
+
+// 確認點擊的農夫,以及相關的資訊
+
+function  checkList(e){
+    // console.log('qq');
+    var num = e.target.dataset.num;
+    var dog = e.target.dataset.dog;
+    console.log('農夫編號是'+num);
+    console.log('有'+dog+'隻狗');
+}
+
+list.addEventListener('click', checkList, false)
+----
+
+=== // 02 透過 JSON.parse, JSON.stringify 來編譯資料
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 02 透過 JSON.parse, JSON.stringify 來編譯資料
+// 1.將array轉為string - JSON.stringfy() - 為了將資料存入local storage
+// 2.將string轉為array - JSON.parse() - 為了取出來的資料可以以陣列進行選取
+// 學以上兩點是因為 local storage 只會保存 string 資料
+
+var country = [
+    {farmer:'卡斯伯'}
+];
+
+//前面是key,後面是value
+localStorage.setItem('countryItem',country);
+
+
+----
+
+http://localhost:8889/view/Desktop/%E5%85%AD%E8%A7%92%E5%AD%B8%E9%99%A2/pics/%E8%A8%BB%E8%A7%A3%202020-03-21%20133900.png[Local
+Storage 的value儲存的是 object Object而非值]
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var getData = localStorage.getItem('countryItem');
+console.log(getData[0].farmer);
+
+// 結果出現 undifined 
+
+console.log(typeof(getData));
+
+// 回傳的類別是 string 不適 array
+// 因為在 local storage 會自動將它傳成 string 的內容
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var country = [
+    {farmer:'卡斯伯'}
+];
+
+var countryString = JSON.stringify(country);
+console.log(countryString);
+
+// 會出現 [{"farmer":"卡斯伯"}] 的 String 出來, 如果是 String 就可以存入
+
+localStorage.setItem('countryItem', countryString);
+var getData = localStorage.getItem('countryItem');
+console.log(typeof(getData));
+// string - 從local storage取出來的值一定都是string
+// 如果想取出來是 array - 要透過 JSON.parse
+var getDataAry = JSON.parse(getData);
+console.log(typeof(getDataAry));
+// 變成 object 格式
+// 確定格式成為 object 之後, 我們就可以開始撈取資料
+console.log(getDataAry[0].farmer);
+----
+
+=== // 01 setItem, getItem 基本操作
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 01 setItem, getItem 基本操作
+
+var btn = document.querySelector('.btnClass');
+
+// 從localstorage取出該值
+var call = document.querySelector('.btnCall'); 
+
+
+function saveName(e){
+    // console.log('qwee'); //test
+    var str = document.querySelector('.textClass').value;
+    // console.log(str);   //test
+    // 重點:將資料存到localstorage - setItem
+    localStorage.setItem('myName',str);
+    // 到chrome的 Application > Local Storage > file://
+}
+
+btn.addEventListener('click',saveName);
+
+// 從localstorage取出該值 - getItem
+call.addEventListener('click',function(){
+    var str = localStorage.getItem('myName');
+    alert('你的名字叫做'+str)
+})
+
+// localStorage: Application > Storage >　Local Storage
+
+----
+
+= Chapter 08 : event(事件)
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 事件監聽優化-從父元素來監聽子元素內容
+// 先選取全部的父元素,在透過 e.target.nodeName 去過濾不需要的元素
+
+
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 網頁座標 screen, page, client的差異
+// 1. screen  是真的螢幕的解析度的座標點
+// 2. page  以整個網頁寬高為主
+// 3. client 是以瀏覽器窗口
+
+
+var screenX = document.querySelector('.screenX');        
+var screenY = document.querySelector('.screenY');   
+var pageX = document.querySelector('.pageX');
+var pageY = document.querySelector('.pageY');
+var clientX = document.querySelector('.clientX');
+var clientY = document.querySelector('.clientY');
+
+function getPosition(e){
+    screenX.textContent = e.screenX;                    
+    screenY.textContent = e.screenY;      
+    pageX.textContent = e.pageX;
+    pageY.textContent = e.pageY;
+    clientX.textContent = e.clientX;
+    clientY.textContent = e.clientY;
+}
+
+var el = document.body;
+el.addEventListener('mousemove', getPosition, false);
+
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// mousemove
+// http://jsbin.com/venuqoreqi/edit?html,css,console,output
+
+
+var el = document.querySelector('.box');
+
+el.addEventListener('mousemove',function(){
+    alert('1234');
+},false)
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// blur-離開焦點時進行事件觸發
+// 建立function 2
+function count(){
+    var hamPrice = 50;
+    var cokePrice = 20;
+    var hamNum = parseInt(document.getElementById('hamNumId').value)*hamPrice;
+    var cokeNum = parseInt(document.getElementById('cokeNumId').value)*cokePrice;
+    document.getElementById('totalId').textContent = hamNum + cokeNum
+}
+// 建立function 1
+function checkContent(e){
+    var str =  e.target.value;
+    if(str==''){
+        alert('此欄位不可為空')
+    }
+}
+var el = document.getElementById('countId');
+el.addEventListener('click',count,false);
+
+// focus 所在焦點
+// blur  離開焦點
+var ham = document.getElementById('hamNumId');
+ham.addEventListener('blur',checkContent,false);
+var coke = document.getElementById('cokeNumId');
+coke.addEventListener('blur',checkContent,false);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// var body 直接選取整個body的內容
+var body = document.body;
+//console.log(body);
+
+function goRocket(e){
+    console.log(e.keyCode);
+    switch(e.keyCode){
+        case 49:
+            document.querySelector('.rocket-1').style.bottom = '2000px';
+            // 改變速度可以在.rocket中的transition中去改參數 1s> 5s
+            // 也可以透過chrome > element > transition 中去查看cubic-bezier參數的其他可能值(拉曲線),或改成其他模式
+            break;
+        case 97:
+            // 97是數字鍵上的1
+            document.querySelector('.rocket-1').style.bottom = '2000px';
+            break; 
+
+        case 50:
+            document.querySelector('.rocket-1').style.bottom = '2000px';
+            break;    
+
+        case 50:
+            document.querySelector('.rocket-1').style.bottom = '2000px';
+            break;    
+
+    } 
+}
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 這一行先寫,上面的function才會和HTML產生連結
+// 透過keyCode可以知道每個鍵盤的相對位置 ex. 1-49, 2-50, 3-51, blank-32, enter-13
+body.addEventListener('keydown',goRocket,false);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// change - 表單內容更動內容時觸發
+// 集大成的一段!!
+
+var area = document.getElementById('areaId');
+var list = document.querySelector('.list');
+var country = [
+    {
+        farmer:'查理',
+        place:'前鎮區'
+    },{
+        farmer:'卡斯柏',
+        place:'苓雅區'    
+    },{
+        farmer:'小花',
+        place:'苓雅區'
+    }
+]
+
+// 'change' 當使用下拉式選單就會觸發change的事件
+var len = country.length;
+// console.log(len);
+function updateList(e){
+   // alert('q12')
+   var select = e.target.value;
+   // console.log(select);
+   var str = '';
+   for(var i=0; len>i;i++){
+       // console.log(country[i].farmer);
+       if(select == country[i].place){
+           str += '<li>'+country[i].farmer+'</li>'
+       }
+   }
+   list.innerHTML = str;
+}
+area.addEventListener('change',updateList,false);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 帶入e進去可以查詢各種狀態
+// target可以了解目前所在元素位置
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var el = document.querySelector('.header');
+el.addEventListener('click',function(e){
+    console.log(e.target);
+},false)
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var el = document.querySelector('.header');
+el.addEventListener('click',function(e){
+    console.log(e.target.nodeName);
+},false)
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var el = document.querySelector('.link');
+
+el.addEventListener('click',function(e){
+    //取消元素的默認行為
+
+    //原本點連結會跳轉到指定網頁
+
+    //也常用在submit按鈕,取消默認行為,先透過我的js去查詢表單有無錯誤,post去傳送
+    e.preventDefault();
+    // 比較 : e.stopPropagation() 只執行自己監聽的行為
+    console.log('test');
+})
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 中止冒泡事件 stopPropagation()
+var el = document.querySelector('.box');
+el.addEventListener('click',function(e){
+    e.stopPropagation();
+    alert('box');
+    console.log('box');
+},false);
+
+
+var elBody = document.querySelector('.body');
+elBody.addEventListener('click',function(){
+    alert('你沒有點到box');
+    console.log('你沒有點到box');
+},false);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// addEventListener('事件',函數, false/true)
+// false(事件氣泡 event bubbling)-代表:從指定元素往外找 - 較合乎一般邏輯
+// true(事件捕抓 event capturing)-從最外層開始找,外面開始找到指定元素
+
+var el = document.querySelector('.box');
+el.addEventListener('click',function(){
+    alert('box');
+    console.log('box');
+},false);
+
+// 從指定元素往外找 box --> body
+var elBody = document.querySelector('.body');
+elBody.addEventListener('click',function(){
+    alert('body');
+    console.log('body');
+},false);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var el = document.querySelector('.box');
+el.addEventListener('click',function(){
+    alert('box');
+    console.log('box');
+},true);
+
+// 從最外層開始找 body --> box
+var elBody = document.querySelector('.body');
+elBody.addEventListener('click',function(){
+    alert('body');
+    console.log('body');
+},true);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 綁定事件的語法差異
+// 根本差異 onclick 不能綁定兩個事件
+
+var elOn=document.querySelector('.btnOn');
+elOn.onclick = function(){
+    alert('on-1');
+}
+
+
+// 就算綁定兩個 alert / event  也只會出現最後一個
+// 事件靈活性低
+
+var elOn=document.querySelector('.btnOn');
+elOn.onclick = function(){
+    alert('on-2');
+}
+
+
+var elAdd=document.querySelector('.btnAdd');
+elAdd.addEventListener('click',function(){
+    alert('add-1');
+},false)
+
+// 事件監聽
+// 綁定的兩個事件都會出現,後者不會取代前者
+
+var elAdd=document.querySelector('.btnAdd');
+elAdd.addEventListener('click',function(){
+    alert('add-2');
+},false)
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// addEventListener 
+
+var el = document.querySelector('.btn');
+
+// ('語法 ex.click', 函數 function(e){}, false - 與處理事件有關)
+el.addEventListener('click',function(e){
+    alert('Baby!');
+},false)
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 觀念篇-各種事件綁定的差異
+// onclick是一個舊的寫法,但現在都還會碰到
+// 新的寫法改用 addEventListener - 監聽 
+
+
+var btn = document.querySelector('.btn');
+
+
+btn.onclick = function(){
+    alert('SayHi');
+}
+
+// addEventListener
+var btn = document.querySelector('.btn');
+btn.addEventListener('click',function(){
+    alert('SaveTheWorld!')
+},false)
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// w3C school - HTML DOM Events
+// https://www.w3schools.com/jsref/dom_obj_event.asp
+
+var el = document.querySelector('.btn');
+
+// 在function中帶入參數 e 
+// 透過console.log(e)去看這個參數
+// console 中,就會出現 MouseEvent 的參數 
+// 利用座標就可以製作遊戲
+
+el.onclick = function(e){
+    console.log(e);
+    alert("hello");
+}
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// XSS : cross-site scripting 跨網站指令攻擊 !!
+// 不要相信任何前端來的東西
+
+// innerHTML 有資安上危機,容易被植入script code, 每次跑text段內的文字, script code都會被讀入
+// 攻擊的方式很多 : 例如改寫裡面所有的 "=" 
+
+// 可以信任的資料  var farms = [];
+// 不可以信任的資料  包含大小於符號 < >
+
+// innerHTML 與 createElement 通常都會互用.但是表單的部分要特別注意
+
+document.getElementById('send').onclick = function() {
+    var str = document.getElementById('content').value;
+
+    document.getElementById('main').innerHTML = str;
+    document.getElementById('main2').innerHTML = str + "yesman";
+}
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// createElement 的寫法
+// 步驟一:用 createElement 去產生節點
+// 步驟二:動態增加 - 產生節點內容 str.tectContent = '1234'
+//        or 透過 setAttribute 動態增加屬性  
+// 步驟三:增加子節點 - 用 document.querySelector 去找出要加載在哪個節點
+// 步驟四:用 appendChild 加載在該節點底下(增加子節點)
+
+var str = document.createElement('em');
+str.textContent = '1234';
+str.setAttribute('class','blue');
+//console.log(str);
+document.querySelector('.title').appendChild(str);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 上下段對調
+
+
+var farms = [
+    {
+        farmer:'Kevin',
+        dogs:['dog1','dog2'],
+    } ,
+    {
+        farmer:'Jack',
+        dogs:['dog3'],
+    }
+ ];
+
+// 用 appendChild 增加子節點
+// appendChild和innerHTML不同,不會刪除原本的內容,會加在後面
+
+ var el = document.querySelector('.list');
+ var farmLen = farms.length;
+ for(var i=0;i<farmLen;i++){
+     var str = document.createElement('li');
+     str.textContent = farms[i].farmer;
+     //console.log(farms[i].farmer)     
+     el.appendChild(str);
+ } 
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var farms = [
+   {
+       farmer:'Kevin',
+       dogs:['dog1','dog2'],
+   } ,
+   {
+       farmer:'Jack',
+       dogs:['dog3'],
+   }
+];
+
+
+var el = document.querySelector('.list');
+var farmLen = farms.length;
+var str ='';
+for(var i=0;i<farmLen;i++){
+    var content = '<li>'+farms[i].farmer+'</li>';
+    str += content;
+    el.innerHTML = str; 
+};
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// '+變數+' '字串-變數-字串' 寫法
+var el = document.querySelector('.list');
+var link = 'http://www.yahoo.com';
+var name = '查理'
+el.innerHTML = '<li><a href="'+link+'">查理</a></li>'
+
+
+var el2 = document.querySelector('#list2');
+var link2 = 'http://www.google.com';
+var name2 = '金剛'
+el2.innerHTML = '<li><a href="'+link2+'">'+name2+'</a></li>'
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// innerHTML 外面用 "" 裡面用 ''  or 相反 外'' 內 ""
+// innerHTML 特性,會清空原本HTML的內容,然後再塞JS的東西進去!(重要!)
+
+
+var el = document.querySelector('#main');
+el.textContent = '1234  ';
+el.textContent = "<h1 class='red'>1234</h1>";
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var el2 = document.querySelector('#main2');
+//el2.innerHTML = "<h1 class='blue'>1234</h1>";
+// ? css的部分讀不到 - 寫錯 css 之間的分隔不用, or ;
+var str = "<h1 id='blue'>1234555</h1>";
+// innerHTML 會清空先前的資料
+el2.innerHTML = str+str;
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 在querySelector下
+// setAttribute 新標籤 用來建立 href 連結
+// 其他標籤 ex.textContent 
+// setAtrtribute 和 getAttribute 不同!!
+
+var el = document.querySelector('.titleClass a');
+el.setAttribute('href','http://www.hotmail.com');
+
+// 動態加上文字(id),使其可以讀取css渲染功能
+// 原本的class='str'還在,另外生成一個strId
+
+var el2 = document.querySelector('.str');
+el2.textContent = 555;
+el2.setAttribute('id','strId');
+
+// 查詢一個屬性的內容 
+// setAttribute, tectContent, innerHTML
+
+var el3 = document.querySelector('.titleClass a').setAttribute('href');
+console.log(el3);
+
+var el4 = document.querySelector('.titleClass a').textContent;
+console.log(el4);
+
+var el5 = document.querySelector('.titleClass').innerHTML;
+console.log(el5);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// querySelectorAll()
+// 多筆資料回傳一筆陣列,將html標籤給陣列化
+
+var el = document.querySelectorAll('.titleClass em');
+console.log(el);
+
+el[0].textContent = '99999';
+el[1].textContent = '66666';
+el[2].textContent = '너무보고 싶어';
+
+console.log(el.length);
+
+var elLen = el.length;
+for(var i=0;i<elLen;i++){
+    el[i].textContent = i +'123';
+}
+
+// 縮短程式碼
+// 方法一: var el
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var el = document.getElementById('titleId');
+el.textContent='138884';
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 方法二:var el = querySelector('CSS選取樣式');
+var el = document.querySelector('#titleId');
+el.textContent = 'ABABABA';
+
+var el2 = document.querySelector('.titleClass');
+el2.textContent = '5566';
+
+var el = document.querySelector('#titleId2 em');
+el.textContent = '678';
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// https://opendata.epa.gov.tw/
+// http://opendata.epa.gov.tw/Data/Contents/RainTenMin/
+// 接三個資料,並過濾出想要的資料
+// codepen, jsbin
+
+var data2 = //天氣資料
+
+console.log(data2.length);
+
+
+//查詢10分鐘內哪個地區有下雨
+for(var i=0;i<data2.length;i++){
+    if(data2[i].Rainfall10min > 0){
+        var county = data2[i].County;
+        var township = data2[i].Township;
+        var rain = data2[i].Rainfall10min;
+        console.log(county+""+township+':'+rain);
+    }
+}
+
+
+//查詢過去12小時內哪個地區有下雨
+for(var i=0;i<data2.length;i++){
+    if(data2[i].Rainfall12hr > 0){
+        var county = data2[i].County;
+        var township = data2[i].Township;
+        var rain = data2[i].Rainfall12hr;
+        var time = data2[i].PublishTime;
+        var unit = data2[i].Unit;
+        console.log(county+""+township+':'+rain+"降雨量"+","+time + "," + unit);
+    }
+}
+
+//查詢過去1小時內哪個site有下雨
+for(var i=0;i<data2.length;i++){    
+    if(data2[i].Rainfall1hr > 0){
+    var township = data2[i].Township;
+    var sitename = data2[i].SiteName;
+    var rain1 = data2[i].Rainfall1hr;
+    console.log(township + sitename);       
+    }
+}
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// 多多利用政府資料開放平台 api
+// 維護者很重要!! 確保更新
+// 利用json view goolge chrome 插件
+// 按右鍵檢視網頁原始碼(或無痕tab)進行複製
+// 直接在前往資源的json按鈕上選擇無痕視窗
+// 前後{}還有裡面的資料要清掉,確保[{},{}]陣列的格式
+// 寫for迴圈可以用vscode的內建提示
+
+
+var data = [{"seq":1,"資料年期別":"100年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"免稅地","資料單位":"元","值":"95536627758"},{"seq":2,"資料年期別":"100年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"應稅地","資料單位":"元","值":"29401707979"},{"seq":3,"資料年期別":"100年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"自用住宅用地","資料單位":"元","值":"2950438948"},{"seq":4,"資料年期別":"100年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率20%","資料單位":"元","值":"23568957306"},{"seq":5,"資料年期別":"100年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率30%","資料單位":"元","值":"1228888909"},{"seq":6,"資料年期別":"100年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率40%","資料單位":"元","值":"1653422816"},{"seq":7,"資料年期別":"100年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地其他稅率","資料單位":"元","值":"0"},{"seq":8,"資料年期別":"101年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"免稅地","資料單位":"元","值":"84782951922"},{"seq":9,"資料年期別":"101年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"應稅地","資料單位":"元","值":"36985910854"},{"seq":10,"資料年期別":"101年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"自用住宅用地","資料單位":"元","值":"3203409794"},{"seq":11,"資料年期別":"101年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率20%","資料單位":"元","值":"30442934653"},{"seq":12,"資料年期別":"101年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率30%","資料單位":"元","值":"1635879397"},{"seq":13,"資料年期別":"101年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率40%","資料單位":"元","值":"1703687010"},{"seq":14,"資料年期別":"101年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地其他稅率","資料單位":"元","值":"0"},{"seq":15,"資料年期別":"102年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"免稅地","資料單位":"元","值":"91743485094"},{"seq":16,"資料年期別":"102年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"應稅地","資料單位":"元","值":"48690776516"},{"seq":17,"資料年期別":"102年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"自用住宅用地","資料單位":"元","值":"3977780739"},{"seq":18,"資料年期別":"102年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率20%","資料單位":"元","值":"40520835250"},{"seq":19,"資料年期別":"102年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率30%","資料單位":"元","值":"2216234751"},{"seq":20,"資料年期別":"102年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率40%","資料單位":"元","值":"1975925776"},{"seq":21,"資料年期別":"102年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地其他稅率","資料單位":"元","值":"0"},{"seq":22,"資料年期別":"103年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"免稅地","資料單位":"元","值":"67715769927"},{"seq":23,"資料年期別":"103年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"應稅地","資料單位":"元","值":"47996150231"},{"seq":24,"資料年期別":"103年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"自用住宅用地","資料單位":"元","值":"4387112749"},{"seq":25,"資料年期別":"103年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率20%","資料單位":"元","值":"40494497738"},{"seq":26,"資料年期別":"103年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率30%","資料單位":"元","值":"1590802735"},{"seq":27,"資料年期別":"103年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率40%","資料單位":"元","值":"1523737008"},{"seq":28,"資料年期別":"103年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地其他稅率","資料單位":"元","值":"1"},{"seq":29,"資料年期別":"104年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"免稅地","資料單位":"元","值":"49438169577"},{"seq":30,"資料年期別":"104年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"應稅地","資料單位":"元","值":"51815944658"},{"seq":31,"資料年期別":"104年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"自用住宅用地","資料單位":"元","值":"6030580655"},{"seq":32,"資料年期別":"104年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率20%","資料單位":"元","值":"40062888260"},{"seq":33,"資料年期別":"104年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率30%","資料單位":"元","值":"3624117460"},{"seq":34,"資料年期別":"104年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率40%","資料單位":"元","值":"2098358283"},{"seq":35,"資料年期別":"104年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地其他稅率","資料單位":"元","值":"0"},{"seq":36,"資料年期別":"105年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"免稅地","資料單位":"元","值":"34830931370"},{"seq":37,"資料年期別":"105年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"應稅地","資料單位":"元","值":"46772912409"},{"seq":38,"資料年期別":"105年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"自用住宅用地","資料單位":"元","值":"6385313814"},{"seq":39,"資料年期別":"105年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率20%","資料單位":"元","值":"35070928044"},{"seq":40,"資料年期別":"105年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率30%","資料單位":"元","值":"3723428844"},{"seq":41,"資料年期別":"105年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率40%","資料單位":"元","值":"1593241707"},{"seq":42,"資料年期別":"105年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地其他稅率","資料單位":"元","值":"0"},{"seq":43,"資料年期別":"106年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"免稅地","資料單位":"元","值":"43903732337"},{"seq":44,"資料年期別":"106年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"應稅地","資料單位":"元","值":"52038448568"},{"seq":45,"資料年期別":"106年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"自用住宅用地","資料單位":"元","值":"6697705926"},{"seq":46,"資料年期別":"106年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率20%","資料單位":"元","值":"39324430545"},{"seq":47,"資料年期別":"106年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率30%","資料單位":"元","值":"3742111982"},{"seq":48,"資料年期別":"106年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率40%","資料單位":"元","值":"2274200115"},{"seq":49,"資料年期別":"106年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地其他稅率","資料單位":"元","值":"0"},{"seq":50,"資料年期別":"107年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"免稅地","資料單位":"元","值":"48964380180"},{"seq":51,"資料年期別":"107年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"應稅地","資料單位":"元","值":"46458707329"},{"seq":52,"資料年期別":"107年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"自用住宅用地","資料單位":"元","值":"6708763035"},{"seq":53,"資料年期別":"107年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率20%","資料單位":"元","值":"34623508296"},{"seq":54,"資料年期別":"107年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率30%","資料單位":"元","值":"3180135143"},{"seq":55,"資料年期別":"107年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地稅率40%","資料單位":"元","值":"1946300855"},{"seq":56,"資料年期別":"107年","統計項目":"調整後原規定地價或前次移轉現值","稅率別":"一般用地其他稅率","資料單位":"元","值":"0"}]
+console.log(data[0]["資料年期別"]); 
+
+//var year = "資料年期別";
+//console.log(data[0][year]); 
+//console.log(data.length);
+
+for (var i=0;i<data.length;i++) {
+   if(data[i]["統計項目"]="調整後原規定地價或前次移轉現值"){
+       console.log(data[i]["資料年期別"]);
+   }
+    
+}
+
+
+for(var i=0;i<data.length;i++){
+   if(data[i]["資料年期別"]="99年"){
+       console.log("稅率別:"+data[i]["稅率別"]);
+   }
+}
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// break
+// 只要滿足條件就停止
+
+var farms =[{
+    farmer : 'Peter',
+    field : 4,
+    chick: 150,
+    banana: 1000
+},{
+    farmer :'Joy',
+    field : 6,
+    chick : 50,
+    banana: 2000
+},{
+    farmer :'Bill',
+    field : 10,
+    chick : 220,
+    banana: 3200   
+}];
+
+var farmsTotal = farms.length;
+//console.log(farmsTotal)
+for (var i=0;i<farmsTotal;i++){
+    if(farms[i].chick>50){
+        console.log(farms[i].farmer+'的小雞剛好夠');
+        farms[i].chick -= 50;
+        console.log(farms[i].farmer+'的小雞剩下'+farms[i].chick);
+        // break 只要有條件滿足就會停止了
+        break; 
+    };
+    
+};
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//計算今年香蕉採收總數
+
+var farms =[{
+    farmer : 'Peter',
+    field : 4,
+    chick: 150,
+    banana: 1000
+},{
+    farmer :'Joy',
+    field : 6,
+    chick : 50,
+    banana: 2000
+},{
+    farmer :'Bill',
+    field : 10,
+    chick : 220,
+    banana: 3200   
+}];
+
+var farmsTotal = farms.length;
+//console.log(farmsTotal)
+var bananaTotal = 0;
+for (var i=0;i<farmsTotal;i++){
+    bananaTotal += farms[i].banana;
+}
+
+console.log('今年村子的香蕉採收量'+bananaTotal);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//
+i = i +1
+i += 1
+
+//
+var total = 501
+total++
+
+total+=1
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//撈出小雞總數超過100隻以上
+
+var farms =[{
+    farmer : 'Peter',
+    field : 4,
+    chick: 150
+},{
+    farmer :'Joy',
+    field : 6,
+    chick : 50
+},{
+    farmer :'Bill',
+    field : 10,
+    chick : 220   
+}];
+
+var farmsTotal = farms.length;
+console.log(farmsTotal);
+
+for (var i=0;i<farmsTotal;i++){
+    //console.log(farms[i].chick);
+    if(farms[i].chick>100){
+        console.log(farms[i].farmer+'的小雞超過100隻')
+    }
+};
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var farms =[{
+    farmer : 'Peter',
+    field : 4
+},{
+    farmer :'Joy',
+    field : 6
+}];
+
+var farmLength = farms.length
+console.log(farmLength);
+
+for(var i=0;i<farmLength;i++){
+    console.log('第'+(i+1)+'個農場主人是'+farms[i].farmer)
+}
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+for(var i=0;i<10;i++){
+    console.log(i+'*'+i+'='+i*i);
+}
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//for 迴圈-相同性質的資料可以透過for迴圈跑出來
+//初始狀態-條件-更新內容 (初-條-更)
+for (var i=0;i<=10;i++){
+    console.log(i);
+};
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var warnLight = 'yellow';
+
+function light(str){
+    alert('請注意現在是'+str+'色警戒');
+};
+
+switch(warnLight){
+
+    case 'red':
+        alert('紅色');
+        break;
+
+    case 'blue':
+        alert('藍色');
+        break;
+    
+    case 'yellow':
+        alert('黃色');
+        break;
+    
+    default:
+        alert('彩色');
+};
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+// switch 和 else if 差別 : 後者在跑的時候整個瀏覽器都會跑過,前者匹配完switch後,跑到break就結束了!
+// 要switch 最好在很多條件的時候用比較好
+// switch通常用在你已經知道條件的時候
+
+var prefer = '米粉';
+
+function eat(food){
+    console.log('我現在想吃'+food);
+};
+
+
+
+switch(prefer){
+    case '牛排':
+        eat('牛排No.1');
+        break;
+    case '沙拉':
+        eat('沙拉No.1');
+        break;
+    case '火鍋':
+        eat('火鍋No.1');
+        break;
+    default:
+        eat('拉麵No.1');
+        break;
+};
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var hungry = 8 ;
+//飢餓程度1~10
+
+function eat(food){
+    console.log(food);
+};
+
+if(hungry <= 3){
+    eat('沙拉');
+}else if(hungry > 3 && hungry < 7){
+    eat('香腸'); 
+}else if(hungry >7 && hungry <9){
+    eat('便當');
+}else {
+    eat('隨便');
+};
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var hungry = '飽足';
+if (hungry == '飢餓') {
+    console.log('我好餓!'); 
+} else {
+    console.log('我在禁食!');
+};
+
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var amVip = false ;
+var myOrd = 1250 ;
+var presentCheck = amVip == true && myOrd >1000 ;
+//alert(presentCheck)
+var orCheck = amVip == true || myOrd > 1000 ;
+//alert(orCheck)
+document.getElementById('andId').textContent = presentCheck ;
+document.getElementById('orId').textContent = orCheck;
+
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var isID = true;
+var isIn = false;
+
+isID == true;
+isID == true && isIn ==true 
+//兩個條件都要滿足
+isID == true && isIn == true;
+
+
+var isID = true;
+var isIn = true;
+var isPaper = true;
+isID == true && isIn == true && isPaper == true
+
+var billFull = 1200;
+var isVip = false ;
+billFull > 1000 || isVip == true
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var nowPeople = 1;
+var totalPeople = 2;
+var allPeopleNoHereCheck = totalPeople !== nowPeople;
+console.log(allPeopleNoHereCheck);
+document.getElementById('totalId').textContent = allPeopleNoHereCheck;
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var myMonth = 5;
+var thisMonth = 12;
+// == 會先回傳 true 或 false 的值 (!), 然後再透過 = 賦值給 birthdayCheck
+var birthdayCheck = myMonth == thisMonth;
+document.getElementById('totalId').textContent = birthdayCheck;
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//邏輯運算子+布林值 --->  expr1 && expr2 如果expr1可以轉換為false,就返回expr1.
+
+// = 只有一個等號,代表賦值
+var aAge = 18;
+var bAge = 18;
+
+// == 兩個等號代表寬鬆相等,比較用的
+aAge == bAge;
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var farm = [
+    {
+        farmer : '卡斯柏' ,
+        cat : [ 'kiki1' , 'kiki2' ] ,
+        dog : 'mimi' ,
+        duck : 20 ,
+        chick : 30 ,
+        totalanimal : function(){
+            // this (靠北 JS 之 This 到底是什麼辣 https://www.youtube.com/watch?v=tpheRywjVQk  
+            //   文件 https://paper.dropbox.com/doc/JS-This-Xw50EZtMFNqG0wUxKeIaz)
+            var sum = this.duck + this.chick;
+            console.log('卡斯柏的農場有' + sum + '隻動物!');
+       }
+    }
+    ,
+    {
+        farmer : '維克' ,
+        cat : [ 'mita' ] ,
+        dog : 'R.I.P' ,
+        duck : 32 ,
+        chick : 33 ,
+        totalanimal : function(){
+            //錯誤方法,無法呼叫要用 this or var  
+            var sum = duck + chick;
+            console.log('維克的農場有' + sum +'隻動物!')
+        }
+    }
+];
+
+farm[0].totalanimal();
+farm[1].totalanimal();
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//物件+陣列的設計
+//將物件放在字串內
+
+var farms = [{      
+    farmer:'Michael',
+    dogs:['doby', 'Gogo'],
+    chick:15,
+    cornfield:[8,5,6],
+    broccolifield:[6,6,6,6],
+    scarecorw:9   
+},{
+    farmer:'Tony', 
+    dogs:['Victory'],
+    chick:22,
+    cornfield:[8,7,1],
+    broccolifield:[3,6,2,9],
+    scarecorw:8
+}];
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//讀取陣列資料
+console.log(farms[0].dogs[1]);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//物件+function
+//物件 - API,後端資料庫,JSON
+
+var farm = {
+    farmer:'Michael',
+    chick:15,
+    duck:3,
+    dog:['AA','BB'],
+    goDinner: function (){  //物件內建function
+        console.log(farm.farmer + '該回家吃晚飯!');  // ; 注意, farm.farmer 因為沒有 var
+        },  // , 注意
+    poultryTotal: function (){  //物件內建function
+        var num = farm.chick + farm.duck;
+        console.log('我的農場總共有' + num + '隻家禽!');
+    },    
+};
+
+console.log(farm.poultryTotal());
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//物件
+var farm = {
+    farmer:'Michael', //用逗號
+    dogs:['doby', 'Gogo'],
+    chick:15,
+    cornfield:[8,5,6],
+    broccolifield:[6,6,6,6],
+    scarecorw:9
+}
+
+console.log(farm);
+
+//用 . 的方式來獲取陣列內的內容
+console.log(farm.chick);
+
+console.log(farm.cornfield);
+
+console.log(farm.dogs[0]);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//在空陣列中新增內容 .push
+
+var cornfield = [];
+cornfield.push(5);
+console.log(cornfield);
+
+//一次增加多個數字
+
+var cornfield = [];
+
+cornfield.push(5);
+cornfield.push(8);
+cornfield.push(9);
+
+console.log(cornfield);
+
+//更改array中的數字
+
+cornfield[2] = 7;
+console.log(cornfield);
+
+//查看array長度 .length
+console.log(cornfield.length);
+//組合字串
+console.log('我總共有' + cornfield.length + '個');
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//array
+var confield1 = 8;
+var confield2 = 5;
+var confield3 = 6;
+
+var cornfield = [8,5,6];
+console.log(cornfield[0]); //js 從0開始算
+
+
+var cornfield = [8,5,6];
+console.log(cornfield[2]);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//老師寫的
+
+document.getElementById('countId').onclick = function(){
+    hamPrice = 50;
+    cokePrice = 20;
+    var numBurger =parseInt(document.getElementById('burgerId').value)*hamPrice; //.value 取值
+    //alert(numBurger);
+    var numCoke = parseInt(document.getElementById('cokeId').value)*cokePrice; 
+    //var numCoke = document.getElementById('cokeId').type;  //.type 取類型 
+    //alert(numCoke);
+    //alert(numBurger+numCoke);  //確定是文字串的相加---> parseInt() 
+    document.getElementById('totalId').textContent = numBurger + numCoke;
+}
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+document.getElementById('countId').onclick = function(){      
+    //alert('fire!')  
+    var numBurger;
+    var numCoke;
+    var total;
+    numBurger = parseInt(document.getElementById('burgerId').value);
+    //alert('burger');
+    numCoke = parseInt(document.getElementById('cokeId').value);
+    //alert('coke');
+    total =   numBurger*80 + numCoke*2;
+    document.getElementById('totalId').textContent = total ;
+}
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var total; //全域變數
+
+function count(oneNum, twoNum){
+    total = oneNum*twoNum;
+    console.log("總價格 " + total); 
+}
+
+count(8,99);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+function count(oneNum, twoNum){
+    var total = oneNum*twoNum;  //total 區域變數,跑完就會在記憶體中銷毀
+    console.log("總價格 " + total); 
+}
+
+count(8,99);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+function order(bugerWant, drink) {
+    var bugerWant;
+    var drink;
+    var burgerPrice = 90;
+    var drinkPrice =20;
+    var totalPay = bugerWant*burgerPrice + drink*drinkPrice;
+    return totalPay
+
+}
+
+order(19,26);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//老師的寫法-失敗中
+//打招呼
+function greet(){
+    var greetNote = '歡迎光臨,請問您要點什麼?漢堡剩下最後8個喔!'
+    document.getElementById('greetId').textContent = greetNote;
+    console.log(greetNote)
+}
+greet();
+
+
+//點餐的回應
+funciton order(bugerWant, drink){
+    var total = (bugerWant*90) + (drink*20);
+    document.getElementById('receiveId').textContent = total;
+}
+order(19,26);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+//按照自己思路第二次寫的
+//打招呼部分
+
+function greet(bugerWant, drink) {
+  var greet = '親 : )歡迎光臨,請問您要點什麼?漢堡剩下最後88個喔!';
+  document.getElementById('greetId').textContent = greet;
+};
+
+greet();
+
+
+//點餐部分
+
+function order(bugerWant, drink) {
+    var bugerWant;
+    document.getElementById('bugerWantId').textContent = bugerWant;
+    
+    var drink;
+    document.getElementById('drinkId').textContent = drink;
+    
+    var burgerPrice = 90;
+    var drinkPrice =20;
+
+    var totalPay = bugerWant*burgerPrice + drink*drinkPrice;
+    document.getElementById('receiveId').textContent = totalPay;
+
+}
+
+order(19,26);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var burgerLeft = 8;
+var bugerWant = 7;
+var drink = 1;
+
+var burgerPrice = 30;
+var drinkPrice = 10;
+
+var total;
+if(burgerLeft >= bugerWant){
+    total = bugerWant*burgerPrice +  drink*drinkPrice;
+}  else {
+    total = burgerLeft*burgerPrice +  drink*drinkPrice;
+}
+
+
+document.getElementById('burgerLeftId').textContent = burgerLeft;
+document.getElementById('bugerWantId').textContent = bugerWant;
+document.getElementById('drinkId').textContent = drink;
+document.getElementById('receiveId').textContent = total;
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var cookiePrice = 35;
+var myMoney = 15;
+var total = cookiePrice - myMoney;
+
+//alert(total);
+
+document.getElementById('cp').textContent = cookiePrice;
+document.getElementById('mm').textContent = myMoney;
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+console.log('hello world!')
+
+
+var price = 3 ;
+var total = price*3 ;
+//console.log(total);
+
+document.getElementById('price').textContent = total ;
+
+var polite = 'Hello ' ;
+var indexName = '伺服器' ;
+var totalPolite = polite + indexName;
+
+
+document.getElementById('myName').textContent = totalPolite ;
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+alert('hello world!')
+document.getElementById('title1').textContent = '修改後的標題';
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var cookiePrice = 35;
+alert(cookiePrice);
+cookiePrice = 25;
+alert(cookiePrice);
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var price = 30;
+document.getElementById('price').textContent = price;
+----
+
+
++*In[ ]:*+
+[source, javascript]
+----
+var indexName = '伺服器' ;
+alert(indexName);
+----
